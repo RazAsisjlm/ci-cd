@@ -12,7 +12,7 @@ job('NodeJS Docker example') {
     
     steps {
         dockerBuildAndPublish {
-            repositoryName('michabi/jenkins-lab')
+            repositoryName('razAsisjlm/jenkins-lab')
             tag('${GIT_REVISION,length=9}')
             registryCredentials('dockerhub')
             buildContext('./basics/')
